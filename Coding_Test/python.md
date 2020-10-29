@@ -37,14 +37,14 @@ result : [(1 ,'Kim'), (2 ,'Min'), (3 ,'Chae')]
 
 개선된 코드
 ```python
-def solution(s, c):
+def solution(participant, completion):
 
-    s.sort()
-    c.sort()
+    participant.sort()
+    completion.sort()
 
-    for par, com in zip(s, c) :
+    for par, com in zip(participant, completion) :
         if par != com :
             return par
 
-    return s[-1] 
+    return participant[-1] 
     ```
